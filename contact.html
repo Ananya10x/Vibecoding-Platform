@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="styles.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VibeCoding Platform</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+<div class="logo">
+<img alt="Logo" src="https://via.placeholder.com/50"/>
+<a href="index.html">VibeCoding</a>
+</div>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="features.html">Features</a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+    
+    <main>
+
+  <!-- Hero Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="display-4 fw-bold mb-3">Get in Touch</h1>
+          <p class="lead mb-4">We're here to help! Whether you have a question about our platform, need assistance with your code, or just want to say hello, feel free to reach out.</p>
+          <a href="#contact-form" class="btn btn-primary btn-lg rounded-pill shadow-lg">Contact Us <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="mb-4 text-center">Send us a Message</h2>
+              <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="mb-3">
+                  <label class="form-label" for="name">Your Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                  <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="emailAddress">Email Address</label>
+                  <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+                  <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                  <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address is not valid.</div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                  <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                  <div class="text-center mb-3">Form submission successful!</div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                  <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg rounded-pill" id="submitButton" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional Contact Information -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card h-100 shadow-lg border-0 rounded-4">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-map-marker-alt fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Our Location</h5>
+              <p class="card-text">123 Main Street, Anytown, CA 12345</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="card h-100 shadow-lg border-0 rounded-4">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-phone fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Phone Number</h5>
+              <p class="card-text">(555) 123-4567</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 rounded-4">
+            <div class="card-body text-center p-4">
+              <i class="fas fa-envelope fa-3x mb-3 text-primary"></i>
+              <h5 class="card-title">Email Address</h5>
+              <p class="card-text">support@vibecoding.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is Vibe Coding?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Vibe Coding is an innovative platform that allows you to generate stunning websites with a single prompt. Simply describe your vision, and our AI-powered engine will bring it to life.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How does it work?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Our platform utilizes advanced AI algorithms to interpret your prompt and generate clean, production-ready code. You can then customize the generated website further to match your exact requirements.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What kind of websites can I create?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can create a wide range of websites, including landing pages, portfolios, e-commerce sites, and blogs. Our platform is versatile and adaptable to various design styles and functionalities.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-0">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8555912909147!2d-122.08406458463483!3d37.42247647975371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba1608a9c6ef%3A0x270a1f3b69d91d54!2sGoogleplex!5e0!3m2!1sen!2sus!4v1701701701701!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- JavaScript for Contact Form -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const contactForm = document.getElementById('contactForm');
+
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Basic form validation (you can add more robust validation)
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('emailAddress');
+        const messageInput = document.getElementById('message');
+
+        let isValid = true;
+
+        if (!nameInput.value.trim()) {
+          nameInput.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          nameInput.classList.remove('is-invalid');
+        }
+
+        if (!emailInput.value.trim() || !isValidEmail(emailInput.value.trim())) {
+          emailInput.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          emailInput.classList.remove('is-invalid');
+        }
+
+        if (!messageInput.value.trim()) {
+          messageInput.classList.add('is-invalid');
+          isValid = false;
+        } else {
+          messageInput.classList.remove('is-invalid');
+        }
+
+
+        if (isValid) {
+          // Simulate form submission (replace with actual API call)
+          setTimeout(() => {
+            document.getElementById('submitSuccessMessage').classList.remove('d-none');
+            contactForm.reset(); // Clear the form
+          }, 1000);
+        } else {
+          document.getElementById('submitErrorMessage').classList.add('d-none');
+        }
+      });
+
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+    });
+  </script>
+</main>
+
+    
+    <footer>
+        © 2024 VibeCoding Platform. All rights reserved.
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
